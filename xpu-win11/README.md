@@ -75,11 +75,11 @@ pip install jupyterlab accelerate diffusers tqdm IProgress transformers scikit-l
 ```
 conda install -c conda-forge openvino=2025.4.0
 ```
-Additionally install OpenVINO GenAI if you plan to optimize generative models
+Additionally install OpenVINO GenAI if you plan to optimize generative models **(OPTIONAL)**
 ```
 pip install openvino-genai
 ```
-Download OpenVINO GenAI archives
+Download OpenVINO GenAI archives **(OPTIONAL)**
 ```
 curl -L https://storage.openvinotoolkit.org/repositories/openvino_genai/packages/2025.4/windows/openvino_genai_windows_2025.4.0.0_x86_64.zip --output openvino_genai_2025.4.0.0.zip
 ```
