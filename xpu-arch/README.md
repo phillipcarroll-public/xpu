@@ -55,8 +55,40 @@ Install Intel Extension for PyTorch:
 uv pip pip install intel-extension-for-pytorch==2.8.10+xpu --extra-index-url https://pytorch-extension.intel.com/release-whl/stable/xpu/us/
 ```
 
+Note: If the intel-extension does not install you may need to download it manually from: <a href="https://download.pytorch-extension.intel.com/ipex_stable/xpu/intel_extension_for_pytorch-2.8.10%2Bxpu-cp312-cp312-linux_x86_64.whl">https://download.pytorch-extension.intel.com/ipex_stable/xpu/intel_extension_for_pytorch-2.8.10%2Bxpu-cp312-cp312-linux_x86_64.whl</a>
+
 Install other needed packages:
 
 ```bash
 uv pip install jupyterlab accelerate diffusers tqdm IProgress transformers scikit-learn matplotlib pillow numpy pandas safetensors ipywidgets
 ```
+
+Open Jupyter Lab:
+
+```bash
+jupyter lab
+```
+
+Running the following to check for xpu support:
+
+```python
+import torch
+import intel_extension_for_pytorch as ipex
+
+# This will return True if everything is working
+print(torch.xpu.is_available())
+print(torch.__version__)
+
+# Validate ipex version
+print(ipex.__version__)
+```
+
+You should see the following output:
+
+```bash
+True
+2.8.0+xpu
+2.8.10+xpu
+```
+
+Garuda/Arch is now setup for pytorch with xpu support.
