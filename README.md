@@ -7,3 +7,5 @@ Ubuntu Pytorch Setup Instructions: <a href="xpu-ubuntu\README.md">xpu-ubuntu</a>
 Ubuntu/Docker Pytorch Setup Instructions: <a href="xpu-ubuntu-docker\README.md">xpu-ubuntu-docker</a>
 
 Arch/Garuda Pytorch Setup Instructions: <a href="xpu-ubuntu-docker\README.md">xpu-arch</a>
+ 
+Intel XPU Eco System: <a href="intel-ecosystem\README.md">intel-ecosystem</a>
